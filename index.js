@@ -1,4 +1,14 @@
 const inquirer = require('inquirer');
+const {
+  viewAllDepartments,
+  viewAllRoles,
+  viewAllEmployees,
+  addDepartment,
+  addRole,
+  addEmployee,
+  updateEmployeeRole,
+  startApp
+} = require('./models/tracker');
 
 // Function to start the application
 function startApp() {
@@ -52,4 +62,5 @@ function startApp() {
     });
 }
 
-
+// Start the application
+startApp();
